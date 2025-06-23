@@ -4,6 +4,10 @@
 
 Building a full-stack web application that replicates the Rogo AI landing page (https://rogo.ai) with an AI-powered copilot chatbot for the AllMind AI Co-op technical assignment.
 
+## Project Guide
+
+We aim for building a responsive web-application suitable for both mobile and desktop devices, with clean code being paramount. No hacky solutions, unless absolutely necessary and justified (subject to human approval), as we strive for production-grade, best-practices software. Always try to use pre-built components and libraries/apis to avoid having to solve problems with known solutions.
+
 ## Project Structure
 
 ```
@@ -21,7 +25,7 @@ allmind-copilot/
 
 - **Framework**: Next.js 15 with TypeScript
 - **Styling**: Tailwind CSS
-- **Component Library**: shadcn/ui with zinc theme
+- **Component Library**: shadcn/ui with neutral theme
 - **Fonts**: Geist Sans and Geist Mono
 - **Build Tool**: Native Next.js build system
 
@@ -51,6 +55,8 @@ allmind-copilot/
 - ✅ Created Next.js 15 app with TypeScript and Tailwind CSS
 - ✅ Configured shadcn/ui with zinc theme
 - ✅ Installed and configured Geist fonts (Sans and Mono)
+- ✅ Replicate Rogo AI landing page design
+- ✅ Create hotkey-accessible chat interface
 
 ### 3. Backend Setup
 
@@ -97,13 +103,11 @@ allmind-copilot/
 
 ## Next Steps (Ready to Begin)
 
-1. **Frontend Development**: Replicate Rogo AI landing page design
-2. **AI Copilot UI**: Create hotkey-accessible chat interface
-3. **Backend WebSocket**: Implement real-time chat communication
-4. **Gemini Integration**: Connect to Google's Gemini API
-5. **Chat History**: Implement Bigtable storage and history viewer
-6. **Dockerization**: Create Docker containers for deployment
-7. **Cloud Deployment**: Deploy to Google Cloud Run
+1. **Backend WebSocket**: Implement real-time chat communication
+2. **Gemini Integration**: Connect to Google's Gemini API
+3. **Chat History**: Implement Bigtable storage and history viewer (table of previous messages on the frontend)
+4. **Dockerization**: Create Docker containers for deployment
+5. **Cloud Deployment**: Deploy to Google Cloud Run
 
 ## Development Servers
 
@@ -112,8 +116,6 @@ allmind-copilot/
 
 ## Key Features to Implement
 
-- Landing page replication of Rogo AI
-- Hotkey-accessible copilot (Ctrl+K)
 - WebSocket-based real-time chat
 - Chat history table with row keys display
 - Google Bigtable integration for persistence
