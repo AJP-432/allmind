@@ -35,7 +35,7 @@ Adherence to the specified technology stack is mandatory.
 
 - **Containerization:** The application must be containerized using Docker. You can choose to set up a single container or two separate containers for the website and chatbot.
 - **Hosting:** The Docker container(s) must be deployed to Google Cloud Run.
-- **Database:** All chat histories must be stored in Google Bigtable.
+- **Database:** All chat histories must be stored in Google Firestore.
   - **Row Keys:** As there is no authentication, use the UNIX timestamp for the row keys.
 
 ### 3. Frontend Implementation Details
