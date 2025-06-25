@@ -68,13 +68,6 @@ export function CopilotChat() {
       if (event.ctrlKey && event.key === "k") {
         event.preventDefault();
         setOpen((prev) => !prev);
-        return;
-      }
-
-      // Escape to close
-      if (event.key === "Escape") {
-        setOpen(false);
-        return;
       }
     };
 
