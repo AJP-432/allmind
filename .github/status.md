@@ -85,6 +85,9 @@ allmind-copilot/
 - ✅ Development environment fully configured
 - ✅ Both frontend and backend servers can run locally
 - ✅ Code quality tools working (Prettier, linting, commit hooks)
+- ✅ Implement real-time chat communication
+- ✅ Connect to Google's Gemini API (in the websocket)
+- ✅ Have real-time websocket communication with the Websocket and Gemini and make a unit test
 
 ## Available NPM Scripts
 
@@ -103,11 +106,9 @@ allmind-copilot/
 
 ## Next Steps (Ready to Begin)
 
-1. **Backend WebSocket**: Implement real-time chat communication
-2. **Gemini Integration**: Connect to Google's Gemini API
-3. **Chat History**: Implement Bigtable storage and history viewer (table of previous messages on the frontend)
-4. **Dockerization**: Create Docker containers for deployment
-5. **Cloud Deployment**: Deploy to Google Cloud Run
+1. **Chat History**: Implement Bigtable storage and history viewer (table of previous messages on the frontend)
+2. **Dockerization**: Create Docker containers for deployment
+3. **Cloud Deployment**: Deploy to Google Cloud Run
 
 ## Development Servers
 
