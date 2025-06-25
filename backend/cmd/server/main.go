@@ -63,15 +63,18 @@ func main() {
 				break
 			}
 
-			// Echo user message
-			msg.Type = "user"
-			msg.Timestamp = time.Now().Unix()
-			conn.WriteJSON(msg)
+			// Log received user message (don't echo it back)
+			log.Printf("Received user message: %s", msg.Content)
+
+			// Only process messages from the user (fixes duplicate responses)
+			if msg.Type != "user" {
+				continue
+			}
 
 			// Generate AI response
 			resp, err := model.GenerateContent(ctx, genai.Text(msg.Content))
 			if err != nil {
-				log.Println(err)
+				log.Printf("Error generating AI response: %v", err)
 				continue
 			}
 
@@ -83,9 +86,13 @@ func main() {
 					aiMsg := Message{
 						Type:      "assistant",
 						Content:   string(textPart),
-						Timestamp: time.Now().Unix(),
+						Timestamp: time.Now().UTC().UnixMilli(), // Use UTC for consistency
 					}
-					conn.WriteJSON(aiMsg)
+					log.Printf("Sending AI response: %s", aiMsg.Content)
+					if err := conn.WriteJSON(aiMsg); err != nil {
+						log.Println("write:", err)
+						break
+					}
 				}
 			}
 		}

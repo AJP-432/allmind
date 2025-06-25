@@ -88,6 +88,7 @@ allmind-copilot/
 - ✅ Implement real-time chat communication
 - ✅ Connect to Google's Gemini API (in the websocket)
 - ✅ Have real-time websocket communication with the Websocket and Gemini and make a unit test
+- ✅ Connected backend websocket to frontend, with a responsive, scrollable chat area and chat messages
 
 ## Available NPM Scripts
 
