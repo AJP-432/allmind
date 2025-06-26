@@ -90,6 +90,7 @@ allmind-copilot/
 - ✅ Have real-time websocket communication with the Websocket and Gemini and make a unit test
 - ✅ Connected backend websocket to frontend, with a responsive, scrollable chat area and chat messages
 - ✅ Messages are being stored in Firestore correctly, with cols: Type: str (either "user" or "copilot"), Content: str, Timestamp: datetime (in format of int64 by GO: time.Now().UTC().UnixMilli())
+- ✅ Chat History View Implemented history viewer (table of previous messages on the frontend, showing the 10 most recent messages)
 
 ## Available NPM Scripts
 
@@ -108,9 +109,8 @@ allmind-copilot/
 
 ## Next Steps (Ready to Begin)
 
-1. **Chat History View**: Implement history viewer (table of previous messages on the frontend)
-2. **Dockerization**: Create Docker containers for deployment
-3. **Cloud Deployment**: Deploy to Google Cloud Run
+1. **Dockerization**: Create Docker containers for deployment
+2. **Cloud Deployment**: Deploy to Google Cloud Run
 
 ## Development Servers
 
