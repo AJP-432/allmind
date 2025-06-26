@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 interface ChatMessageProps {
   content: string;
   timestamp: number;
-  variant: "user" | "assistant";
+  variant: "user" | "copilot";
   className?: string;
 }
 

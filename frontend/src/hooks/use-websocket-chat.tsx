@@ -2,9 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-// Message interface matching the backend
 export interface Message {
-  type: "user" | "assistant";
+  type: "user" | "copilot";
   content: string;
   timestamp: number;
 }
@@ -53,12 +52,12 @@ export function useWebSocketChat(options: UseWebSocketChatOptions = {}) {
       try {
         const receivedMessage: Message = JSON.parse(event.data);
 
-        // When we get a response from the assistant, we're no longer loading.
-        if (receivedMessage.type === "assistant") {
+        // Stop loading state once we receive a message from the copilot
+        if (receivedMessage.type === "copilot") {
           setIsLoading(false);
         }
 
-        // Add the message from the server to our chat history.
+        // Update chat history
         setMessages((prev) => [...prev, receivedMessage]);
       } catch (error) {
         console.error("Failed to parse WebSocket message:", error);
