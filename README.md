@@ -2,6 +2,8 @@
 
 A full-stack web application that replicates the Rogo AI landing page with an AI-powered copilot chatbot, built for the AllMind AI Co-op technical assignment.
 
+Check it out live: [here](https://allmind-frontend-1060461419600.northamerica-northeast1.run.app/)
+
 ## 🎯 Project Overview
 
 This project demonstrates a production-grade web application featuring:
