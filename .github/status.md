@@ -91,6 +91,8 @@ allmind-copilot/
 - ✅ Connected backend websocket to frontend, with a responsive, scrollable chat area and chat messages
 - ✅ Messages are being stored in Firestore correctly, with cols: Type: str (either "user" or "copilot"), Content: str, Timestamp: datetime (in format of int64 by GO: time.Now().UTC().UnixMilli())
 - ✅ Chat History View Implemented history viewer (table of previous messages on the frontend, showing the 10 most recent messages)
+- ✅ Dockerization: Create Docker containers for deployment
+- ✅ Cloud Deployment: Deploy to Google Cloud Run
 
 ## Available NPM Scripts
 
@@ -103,14 +105,15 @@ allmind-copilot/
   "lint:frontend": "cd frontend && npm run lint",
   "lint:backend": "cd backend && go vet ./...",
   "format:frontend": "cd frontend && prettier --write .",
-  "format:backend": "cd backend && gofmt -w ."
+  "format:backend": "cd backend && gofmt -w .",
+  "deploy:backend": "./deploy-backend.sh",
+  "deploy:frontend": "./deploy-frontend.sh"
 }
 ```
 
 ## Next Steps (Ready to Begin)
 
-1. **Dockerization**: Create Docker containers for deployment
-2. **Cloud Deployment**: Deploy to Google Cloud Run
+Everything complete (could copy Rogo.ai more though)
 
 ## Development Servers
 
