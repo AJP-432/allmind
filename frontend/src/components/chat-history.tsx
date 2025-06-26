@@ -65,13 +65,13 @@ export function ChatHistory() {
   };
 
   return (
-    <section id="history" className="w-full py-4 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-        <div className="space-y-2 text-center mb-8">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+    <section id="history" className="w-full py-8">
+      <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div className="space-y-2 text-center mb-6">
+          <h2 className="text-2xl font-bold tracking-tighter md:text-3xl">
             Recent Chat History
           </h2>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
             A live view of the 10 most recent messages.
           </p>
         </div>

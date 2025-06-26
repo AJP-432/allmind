@@ -94,16 +94,16 @@ export function CopilotChat() {
       <SheetTrigger asChild>
         <Button variant="outline" size="sm" className="gap-2">
           <MessageSquare className="h-4 w-4" />
-          <span className="hidden sm:inline">AI Copilot</span>
-          <span className="sm:hidden">AI</span>
-          <kbd className="pointer-events-none hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 lg:flex">
+          <span className="hidden md:inline">AI Copilot</span>
+          <span className="md:hidden">AI</span>
+          <kbd className="pointer-events-none hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 md:flex">
             <span className="text-xs">Ctrl</span>K
           </kbd>
         </Button>
       </SheetTrigger>
 
       <SheetContent className="flex w-full flex-col sm:max-w-md">
-        <SheetHeader className="flex-shrink-0">
+        <SheetHeader className="flex-shrink-0 px-2">
           <SheetTitle>AI Copilot</SheetTitle>
           <SheetDescription>
             Ask me anything about AllMind or get help with your questions.
@@ -113,10 +113,10 @@ export function CopilotChat() {
           </div>
         </SheetHeader>
 
-        <div className="flex flex-1 flex-col gap-4 py-4 min-h-0">
+        <div className="flex flex-1 flex-col gap-4 py-4 px-2 min-h-0">
           {/* Chat Messages Area */}
-          <ScrollArea className="flex-1 rounded-md border bg-muted/50 h-9/12">
-            <div className="p-4 space-y-4">
+          <ScrollArea className="flex-1 rounded-md border bg-muted/50">
+            <div className="p-3 space-y-4">
               {messages.length === 0 ? (
                 <p className="text-sm text-muted-foreground">
                   Start a conversation with the AI copilot...

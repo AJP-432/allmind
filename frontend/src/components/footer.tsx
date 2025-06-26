@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="w-full border-t border-border/40">
-      <div className="mx-auto max-w-screen-2xl px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-2xl px-4 py-6 md:px-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center space-x-2">
             <span className="font-bold">AllMind</span>

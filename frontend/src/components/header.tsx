@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
-      <div className="mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 lg:px-8">
+      <div className="mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-8">
         {/* Logo */}
         <Link
           href="/"
@@ -60,17 +60,13 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation - Narrower and Centered */}
+      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div
           id="mobile-navigation"
           className="absolute right-4 top-full w-auto min-w-[120px] border border-border bg-background shadow-lg rounded-md md:hidden"
         >
-          <nav
-            className="flex flex-col py-2"
-            role="navigation"
-            aria-label="Mobile navigation"
-          >
+          <nav className="flex flex-col py-2">
             {navigationLinks.map((link) => (
               <Link
                 key={link.href}
